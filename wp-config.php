@@ -63,7 +63,15 @@ define('NONCE_SALT',       'O-qoRmr!OqB2zU;1FskHP?,=PDkxx>6H]@ir|Vy.-nDZs$x=t|:[
  * Можно установить несколько сайтов в одну базу данных, если использовать
  * разные префиксы. Пожалуйста, указывайте только цифры, буквы и знак подчеркивания.
  */
-$table_prefix  = 'ah_';
+
+// Если сайт работает по протоколу https:
+// define('FORCE_SSL_ADMIN', true);
+// if (isset($_SERVER['HTTP_X_FORWARDED_PROTO'])&&$_SERVER['HTTP_X_FORWARDED_PROTO']==https)
+// $_SERVER['HTTPS']='on';
+
+$prefix = str_replace( array( 'www.', '-', '.' ), '', $_SERVER['HTTP_HOST'] );
+$table_prefix = $prefix . '_';
+// $table_prefix  = 'forwp_';
 
 /**
  * Для разработчиков: Режим отладки WordPress.
@@ -71,13 +79,21 @@ $table_prefix  = 'ah_';
  * Измените это значение на true, чтобы включить отображение уведомлений при разработке.
  * Разработчикам плагинов и тем настоятельно рекомендуется использовать WP_DEBUG
  * в своём рабочем окружении.
- * 
+ *
  * Информацию о других отладочных константах можно найти в Кодексе.
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
 
+define('WP_ALLOW_MULTISITE', true);
+define('MULTISITE', true);
+// Для поддоменов - true, для подкаталогов - false
+define('SUBDOMAIN_INSTALL', false);
+define('DOMAIN_CURRENT_SITE', 'forwp');
+define('PATH_CURRENT_SITE', '/');
+define('SITE_ID_CURRENT_SITE', 1);
+define('BLOG_ID_CURRENT_SITE', 1);
 /* Это всё, дальше не редактируем. Успехов! */
 
 /** Абсолютный путь к директории WordPress. */

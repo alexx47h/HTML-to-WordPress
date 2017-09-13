@@ -26,7 +26,7 @@
       ?>
       <div class="col-md-8">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-          <!-- Indicators, как и в index.php -->
+          <!-- Indicators, как и в index.php... -->
           <ol class="carousel-indicators">
             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -81,10 +81,10 @@
         $args = array(
           'post_type' => "portfolio",
           'posts_per_page' => 2,
-          // _не ошибка. Что не н. выводить
+          // _не ошибка. Указание, что не н. выводить
           'post__not_in' => array($post->ID)
           );
-          //не включать в запрос ID текущ. выводимой записи
+          // Не включаем в запрос ID текущ. выводимой записи
           $portfolios = new WP_Query($args);
       ?>
       <?php while ($portfolios -> have_posts()) { ?>

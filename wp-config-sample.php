@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'впишите сюда уникальную фразу');
-define('SECURE_AUTH_KEY',  'впишите сюда уникальную фразу');
-define('LOGGED_IN_KEY',    'впишите сюда уникальную фразу');
-define('NONCE_KEY',        'впишите сюда уникальную фразу');
-define('AUTH_SALT',        'впишите сюда уникальную фразу');
-define('SECURE_AUTH_SALT', 'впишите сюда уникальную фразу');
-define('LOGGED_IN_SALT',   'впишите сюда уникальную фразу');
-define('NONCE_SALT',       'впишите сюда уникальную фразу');
+define('AUTH_KEY',         '&1LmN[jX/oG+>Q/$4{Zfgq&pDI^dm-e/1wq)1_`=GfV<)b*IaG-4E-|1bn1/.wpC');
+define('SECURE_AUTH_KEY',  ')jV:,{[-,.J}$`wY/$]oRov<+9A|dfeY#Ztsafz/LrM?|fDb/cK]nxYx+p~r`N0W');
+define('LOGGED_IN_KEY',    '1+<#FNG<cg+3Na-+2qoE$kmgEqReP_nvucE#&.?R|M%h0]^~a|^FXHJI<kS?B9NX');
+define('NONCE_KEY',        'lFSpgU(H/_Llty/,GVDJ!Nt-v9V~ql%G%R@&oWRfTt[G99z+nE54l|sQWAdfU) i');
+define('AUTH_SALT',        '`>xtB+x{xJVP+#,dw .8,J5+{JeJELKv4+1}EsX/g6B1@)gsc]W}z{(j1v:(<XLg');
+define('SECURE_AUTH_SALT', 'ZJga_d9-3f^,Q-s;rUWF7v0ViZCoEh5BA|s2^TN*n!A^xcU(/.MN|+0:WUTLMA]2');
+define('LOGGED_IN_SALT',   'yBQxU4_||~-C8~1[]py4U_-FHC%|78alVMv64(|_HZwH(&z#OXW_wFl2Qf0EFa(p');
+define('NONCE_SALT',       'Qs<ZnUSHC{HZDSh$|=>^8C4Bpjd;K|(uIgM1j@^D7XZ,s ij|/P/z~sCZ-NT(wv.');
 
 /**#@-*/
 
@@ -71,7 +71,7 @@ $table_prefix  = 'wp_';
  * Измените это значение на true, чтобы включить отображение уведомлений при разработке.
  * Разработчикам плагинов и тем настоятельно рекомендуется использовать WP_DEBUG
  * в своём рабочем окружении.
- * 
+ *
  * Информацию о других отладочных константах можно найти в Кодексе.
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress

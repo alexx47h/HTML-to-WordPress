@@ -50,17 +50,17 @@
             }
           ?>
           <div class="item <?php echo $active; ?>">
-            <!-- получаем миниатюру записи -->
+            <!-- Получаем миниатюру записи -->
             <?php $miniature_url = get_the_post_thumbnail_url($post->ID) ?>
             <div class="fill" style="background-image:url('<?php echo $miniature_url; ?>');"></div>
             <div class="carousel-caption">
               <h2><?php the_title(); ?></h2>
             </div>
           </div>
-          <!-- иначе б. все active -->
+          <!-- Иначе б. все active -->
           <?php $i++; ?>
         <?php } ?>
-        <!-- после всех операций "вернули" WP его данные -->
+        <!-- После всех операций "вернули" WP его данные -->
         <?php wp_reset_postdata(); ?>
       </div>
     <?php } ?>
@@ -72,14 +72,13 @@
       <span class="icon-next"></span>
     </a>
   </header>
-
   <!-- Page Content -->
   <div class="container">
     <!-- Marketing Icons Section -->
     <div class="row">
       <div class="col-lg-12">
         <h1 class="page-header">
-          Welcome to Modern Business
+          Welcome to <?php bloginfo("name"); ?>
         </h1>
       </div>
       <div class="col-md-4">
@@ -88,7 +87,7 @@
             <h4><i class="fa fa-fw fa-check"></i> Bootstrap v3.2.0</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+            <p><?php bloginfo("description"); ?></p>
             <a href="#" class="btn btn-default">Learn More</a>
           </div>
         </div>
@@ -99,7 +98,7 @@
             <h4><i class="fa fa-fw fa-gift"></i> Free &amp; Open Source</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+            <p><?php bloginfo("description"); ?></p>
             <a href="#" class="btn btn-default">Learn More</a>
           </div>
         </div>
@@ -110,7 +109,7 @@
             <h4><i class="fa fa-fw fa-compass"></i> Easy to Use</h4>
           </div>
           <div class="panel-body">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
+            <p><?php bloginfo("description"); ?></p>
             <a href="#" class="btn btn-default">Learn More</a>
           </div>
         </div>
@@ -164,7 +163,6 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
       </div>
       <div class="col-md-6">
-        <!-- <img class="img-responsive" src="http://placehold.it/700x450" alt=""> -->
         <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/700x450.png" alt="">
       </div>
     </div>

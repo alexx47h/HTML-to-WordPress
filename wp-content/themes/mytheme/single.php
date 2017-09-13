@@ -8,13 +8,6 @@
       <div class="col-lg-12">
         <h1 class="page-header">
           <?php the_title(); ?>
-  <!--         <?php
-            $author = get_the_author();
-            if ($author == "editor") {
-              $author_display_name = "Administrator";
-            }
-          ?>
-          <small>by <a href="#"><?php echo $author_display_name; ?></a></small> -->
           <small>by <a href="#"><?php the_author(); ?></a></small>
         </h1>
         <ol class="breadcrumb">
@@ -32,15 +25,11 @@
         <!-- Blog Post -->
         <hr>
         <!-- Date/Time -->
-        <!-- с помощью формата j F Y, м. также исп-ть, если отображается! дата последнего поста -->
-        <!-- <p><i class="fa fa-clock-o"></i> Опубликованно <?php the_time('j F Y'); ?></p> -->
-        <!-- с помощью хука -->
-        <p><i class="fa fa-clock-o"></i> Опубликованно <?php the_date(); ?></p>
+        <p><i class="fa fa-clock-o"></i> Опубликованно <?php the_time('j F Y'); ?></p>
         <hr>
         <!-- Preview Image -->
         <img class="img-responsive" src="http://placehold.it/900x300" alt="">
         <hr>
-<!--         <p><?php the_excerpt(); ?></p> -->
         <!-- Post Content -->
         <p><?php the_content(); ?></p>
         <hr>

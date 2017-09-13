@@ -8,15 +8,12 @@
     </footer>
   </div>
   <!-- /.container -->
-  <!-- jQuery -->
-  <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.js"></script>
-  <!-- Bootstrap Core JavaScript -->
-  <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
+  <?php wp_footer(); ?>
   <!-- Script to Activate the Carousel -->
-  <script>
+<!--   <script>
     $('.carousel').carousel({
-      interval: 5000 //changes the speed
+      interval: 1000 //changes the speed
     })
-  </script>
+  </script> -->
 </body>
 </html>

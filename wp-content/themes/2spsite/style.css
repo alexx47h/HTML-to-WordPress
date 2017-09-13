@@ -1,0 +1,477 @@
+/*
+Theme Name: SPSite
+Theme URI: https://www.example.com/
+Description: It's single-page site
+Author: Alexander
+Author URI: https://alexx47h.github.io
+Version: 0.1.0
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+
+  vertical-align: baseline;
+
+  border: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+img,
+fieldset,
+a img {
+  border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  -webkit-appearance: none;
+}
+
+input[type="submit"],
+button {
+  cursor: pointer;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+
+  border: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+input,
+button {
+  margin: 0;
+  padding: 0;
+
+  border: 0;
+}
+
+div,
+input,
+textarea,
+select,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+a:focus {
+  outline: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  * {
+    -webkit-text-size-adjust: none;
+  }
+}
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font: 16px/1.2rem Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  color: #444;
+
+  background: #f3f3f3;
+}
+
+.wrapper {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 20px;
+  padding: 30px 10px;
+
+  *zoom: 1;
+}
+.header:after {
+  content: " ";
+
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+}
+.logo a {
+  font-weight: bold;
+  font-size: 35px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+.logo p {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.search {
+  float: right;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 35px;
+  padding: 0 15px;
+
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #333;
+
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+
+      -ms-border-radius: 5px;
+}
+
+.btn {
+  padding: 11px 15px;
+
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #666;
+
+  border: 1px solid #ddd;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+
+      -ms-border-radius: 5px;
+}
+.btn-black {
+  background: #aaa;
+}
+
+.nav {
+  padding: 0 10px;
+
+  background: #eee;
+
+  border: 1px solid #ccc;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+  *zoom: 1;
+      -ms-border-radius: 4px;
+}
+.nav:after {
+  content: " ";
+
+  display: table;
+  clear: both;
+}
+.nav a {
+  display: block;
+  float: left;
+
+  padding: 10px 15px;
+
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #555;
+}
+.nav a:hover {
+  background: #ccc;
+}
+
+.main {
+  *zoom: 1;
+}
+.main:after {
+  content: " ";
+
+  display: table;
+  clear: both;
+}
+
+.content {
+  float: left;
+
+  width: 65%;
+}
+
+.article,
+.sidebar .widget {
+  overflow: hidden;
+
+  margin: 20px 0;
+  padding: 10px;
+
+  background: #fff;
+
+  border: 1px solid #ddd;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+      -ms-border-radius: 4px;
+}
+.article__title,
+.sidebar .widget__title {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+
+  background: #eee;
+
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+      -ms-border-radius: 4px;
+}
+.article__title a,
+.sidebar .widget__title a {
+  text-decoration: none;
+  color: inherit;
+}
+.article__title a:hover,
+.sidebar .widget__title a:hover {
+  text-decoration: underline;
+}
+.article__title .date,
+.sidebar .widget__title .date {
+  display: inline-block;
+
+  margin-left: 10px;
+
+  font-size: 12px;
+  vertical-align: middle;
+  color: #999;
+}
+.article img,
+.sidebar .widget img {
+  float: left;
+
+  max-width: 200px;
+  height: auto;
+  margin: 0 20px 10px 0;
+
+  border: 5px solid #999;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+      -ms-border-radius: 4px;
+}
+.article__footer,
+.sidebar .widget__footer {
+  margin-top: 10px;
+  padding: 10px 0;
+
+  border-top: 1px solid #ccc;
+}
+
+.tags,
+.cat {
+  display: inline-block;
+
+  margin-right: 10px;
+}
+.tags span,
+.tags a,
+.cat span,
+.cat a {
+  display: inline-block;
+
+  font-weight: bold;
+  font-size: 12px;
+  vertical-align: middle;
+}
+.tags a,
+.cat a {
+  padding: 3px 8px;
+
+  text-decoration: none;
+  color: #555;
+
+  border: 1px solid #eee;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+      -ms-border-radius: 4px;
+}
+.tags a:hover,
+.cat a:hover {
+  background: #eee;
+}
+
+.sidebar {
+  float: right;
+
+  width: 33%;
+}
+.sidebar ul li a {
+  display: inline-block;
+
+  padding: 5px;
+
+  color: #555;
+}
+
+.footer {
+  padding: 20px;
+
+  background: #ddd;
+
+  border: 1px solid #aaa;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+  *zoom: 1;
+      -ms-border-radius: 4px;
+}
+.footer:after {
+  content: " ";
+
+  display: table;
+  clear: both;
+}
+.footer .widget {
+  float: left;
+
+  width: 25%;
+}
+.footer .widget__title {
+  margin-bottom: 10px;
+}
+.footer .widget ul li {
+  margin-bottom: 3px;
+}
+.footer .widget ul li a {
+  color: inherit;
+}
+.footer .widget form input {
+  width: 130px;
+}
