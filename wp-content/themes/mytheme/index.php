@@ -35,6 +35,7 @@
           </div>
         </div>
       <?php } ?>
+      <?php wp_reset_postdata(); ?>
     ?> -->
     <?php if ($slides->have_posts()) { ?>
       <div class="carousel-inner">

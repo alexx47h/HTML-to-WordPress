@@ -1,8 +1,8 @@
 Layouts:
-1. source code - startbootstrap-modern-business.zip (directory - mytheme, DB is hidden);
+1. Source code - Startbootstrap-modern-business.zip (directory - mytheme);
 2. Blog layout (directory - 2spsite).
 
-Path to the themes (one theme = one site):
+Path to the themes (one theme - one site):
 /wp-content/themes
 
 Deployment using the plugin "Duplicator".
